@@ -1,13 +1,16 @@
-/*n=20
-var martivi= ("martivi")
+var i;
+var masivi = [];
+for (i = 2; i < 20; i++) {
+    let truee = true;
+    for (var x = 2; x <= Math.round(Math.sqrt(i)); x++) {
 
-for (var i = 2; i<20; i++){
-if(n % i ==0);
- martivi = ("ar aris martivi");
- alert (martivi)
- 
+        if (i % x == 0) {
+            truee = false
+        }
 
-
-
- მოკლედ ვერ გავაკეთე ეს დავალება და იმედია არ მომკლავ ამისგამო ;დ */
- 
+    }
+    if (truee) {
+        masivi.push(i);
+    }
+}
+alert(masivi)
